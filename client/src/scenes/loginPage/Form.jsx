@@ -229,7 +229,7 @@ const Form = () => {
                                                     },
                                                 }}
                                             >
-                                                <input {...getInputProps} />
+                                                {/* <input {...getInputProps} /> */}
                                                 {!values.picture ? (
                                                     <p>Add Picture Here</p>
                                                 ) : (

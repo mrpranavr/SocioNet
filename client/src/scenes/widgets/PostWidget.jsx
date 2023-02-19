@@ -23,8 +23,8 @@ const PostWidget = ({
     userPicturePath,
     likes,
     comments,
+    index
 }) => {
-
     const [isComments, setIsComments] = useState(false);
     const { palette } = useTheme();
     const dispatch = useDispatch();
@@ -54,7 +54,7 @@ const PostWidget = ({
     };
 
     return (
-        <WidgetWrapper m="2rem 0">
+        <WidgetWrapper m={index !== 0 ? `2rem 0` : '0rem 0rem 0rem 0rem'}>
             <Friend
                 friendId={postUserId}
                 name={name}
